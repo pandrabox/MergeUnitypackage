@@ -47,10 +47,16 @@ class MergeUnitypackage
             Console.WriteLine("Merge failed due to name conflicts.");
         }
     }
-
     static string ExtractUnityPackage(string unityPackagePath)
     {
         string extractDir = Path.Combine(Path.GetTempPath(), Path.GetFileNameWithoutExtension(unityPackagePath));
+
+        // Clear the directory if it exists
+        if (Directory.Exists(extractDir))
+        {
+            Directory.Delete(extractDir, true);
+        }
+
         Directory.CreateDirectory(extractDir);
 
         using (Stream stream = File.OpenRead(unityPackagePath))
