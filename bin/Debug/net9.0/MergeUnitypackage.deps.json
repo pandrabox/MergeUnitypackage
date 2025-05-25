@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "MergeUnitypackage/1.0.0": {
+        "dependencies": {
+          "SharpCompress": "0.29.0.0"
+        },
+        "runtime": {
+          "MergeUnitypackage.dll": {}
+        }
+      },
+      "SharpCompress/0.29.0.0": {
+        "runtime": {
+          "SharpCompress.dll": {
+            "assemblyVersion": "0.29.0.0",
+            "fileVersion": "0.29.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MergeUnitypackage/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SharpCompress/0.29.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

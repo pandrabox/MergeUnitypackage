@@ -1,0 +1,12 @@
+# .gitignore for C#/.NET projects
+obj/
+SharpCompress.0.29.0/
+nuget.exe
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.vs/
+# OS generated files
+.DS_Store
+Thumbs.db
